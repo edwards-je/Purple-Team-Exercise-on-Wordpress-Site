@@ -35,36 +35,36 @@ TODO: insert img
 
 ### Hardening SSH
  
-1.Block all SSH access on port 22 if not necessary for employees
+1. Block all SSH access on port 22 if not necessary for employees
 -Use firewalld to restrict access to SSH on the server to only the internal subnet
 
-2.Network Segmentation
+2. Network Segmentation
 -Deny direct remote access to into internal systems through use of network proxies, gateways, and firewalls
 
-3.Key Authentication
+3. Key Authentication
 -Using Passwordless Authentication prevents unauthorized entry by hacking passwords, while allowing authorized users to set up SSH key connection
 -COMMAND to modify SSH configuration file: sudo vim /etc/ssh/sshd_config
 
 ### Hardening Against Password Attacks
 
-1.Secure Password Policy
+1. Secure Password Policy
    -Protects from password guessing and crypto attacks on hashes
    -enforcing password length and complexity policies
    -checking for weak-passwords against password lists
    -password expires after 60 days
    -6 discrete passwords must be used before reuse
 
-2.Account Lockout Threshold
+2. Account Lockout Threshold
    -Prevents brute force attacks
    -30-minute lockout after 3 failed attempts within 15-minutes
    -alert on failed authentication
 
 ### Hardening Against User Enumeration in WordPress
 
-1.Install Wordpress Plugin to stop user enumeration
+1. Install Wordpress Plugin to stop user enumeration
   -Toggle stop user enumeration in the security fixers tab
 
-2.Fuzzing the parameter author in WordPress home URL
+2. Fuzzing the parameter author in WordPress home URL
   -User names are vulnerable when usernames are easily identifiable in WPScan
   -Appending an integer onto author names will make names more difficult to identify
 
@@ -72,9 +72,9 @@ TODO: insert img
 
 1. Remove Steven’s sudo permission to python
  
-2.Create user groups with least permission
-  -Devs, for Michael and Steven
-  -makes administration easier
+2. Create user groups with least permission
+   -Devs, for Michael and Steven
+   -makes administration easier
 
 3. Schedule regular IAM audits
 
