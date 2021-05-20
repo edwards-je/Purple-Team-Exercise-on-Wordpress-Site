@@ -7,7 +7,7 @@
 ### Exposed Services
   Nmap scan results revealed services and OS details.
  
-(images/nmap.scan.results.png)
+!(images/nmap.scan.results.png)
 
 
 
