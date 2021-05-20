@@ -14,19 +14,18 @@ TODO: insert img
 
 
 ### Critical Vulnerabilities
-╔═════════════════════════╤═════════════════════════════════════════════════════════════════════════════╤════════════════════════════════════════════════════════════════════════════════════════╤════════════════════════════════════════════════════════════════════════════╗
-║ Vulnerability           │ Link                                                                        │ Description                                                                            │ Impact                                                                     ║
-╠═════════════════════════╪═════════════════════════════════════════════════════════════════════════════╪════════════════════════════════════════════════════════════════════════════════════════╪════════════════════════════════════════════════════════════════════════════╣
-║ Open SSH                │ [https://attack.mitre.org/techniques/T1133/]                                │ Open SSH is an exposed external remote service. Used to                                │ Can be used by an attacker to gain entry to a system and for persistent    ║
-║                         │                                                                             │ provide access to network resources from external locations.                           │ access.                                                                    ║
-║                         │                                                                             │                                                                                        │                                                                            ║
-║ Misconfigured IAM       │ [https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication]  │ Confirming a user’s identity is critical to security operations. Broken Authentication │ Weak passwords, no failed login attempt lockout, and failure to implement  ║
-║                         │                                                                             │ is a widespread problem rooted in the design of Identity and Access Controls.          │ least-privilege provide vectors for an attacker.                           ║
-║                         │                                                                             │                                                                                        │                                                                            ║
-║ Sensitive Data Exposure │ [https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure]│ An attacker may search for insecure sensitive data. Insecure credentials               │ Attackers are able to enumerate users through Wordpress. Additionally, the ║
-║                         │ [https://attack.mitre.org/techniques/T1589/]                                │ can allow an attacker to more easily gain access.                                      │ password for the MySQL database is store plaintext in wp-config.php.       ║
-╚═════════════════════════╧═════════════════════════════════════════════════════════════════════════════╧════════════════════════════════════════════════════════════════════════════════════════╧════════════════════════════════════════════════════════════════════════════╝
-
+╔═════════════════════════╤════════════════════════════════════════════════════════════════════════════════════════╤════════════════════════════════════════════════════════════════════════════╗
+║ Vulnerability           │ Description                                                                            │ Impact                                                                     ║
+╠═════════════════════════╪════════════════════════════════════════════════════════════════════════════════════════╪════════════════════════════════════════════════════════════════════════════╣
+║ [Open SSH](https://attack.mitre.org/techniques/T1133/)                │ Open SSH is an exposed external remote service. Used to                                │ Can be used by an attacker to gain entry to a system and for persistent    ║
+║                         │ provide access to network resources from external locations.                           │ access.                                                                    ║
+║                         │                                                                                        │                                                                            ║
+║ [Misconfigured IAM](https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication)       │ Confirming a user’s identity is critical to security operations. Broken Authentication │ Weak passwords, no failed login attempt lockout, and failure to implement  ║
+║                         │ is a widespread problem rooted in the design of Identity and Access Controls.          │ least-privilege provide vectors for an attacker.                           ║
+║                         │                                                                                        │                                                                            ║
+║ [Sensitive Data Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure) │ An attacker may search for insecure sensitive data. Insecure credentials               │ Attackers are able to enumerate users through Wordpress. Additionally, the ║
+║                         │ can allow an attacker to more easily gain access.                                      │ password for the MySQL database is store plaintext in wp-config.php.       ║
+╚═════════════════════════╧════════════════════════════════════════════════════════════════════════════════════════╧════════════════════════════════════════════════════════════════════════════╝
 
 
 ## Network Hardening Suggestions
