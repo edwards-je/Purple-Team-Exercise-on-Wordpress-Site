@@ -36,14 +36,14 @@ TODO: insert img
 ### Hardening SSH
  
 1. Block all SSH access on port 22 if not necessary for employees
-- Use firewalld to restrict access to SSH on the server to only the internal subnet
+   - Use firewalld to restrict access to SSH on the server to only the internal subnet
 
 2. Network Segmentation
-- Deny direct remote access to into internal systems through use of network proxies, gateways, and firewalls
+   - Deny direct remote access to into internal systems through use of network proxies, gateways, and firewalls
 
 3. Key Authentication
-- Using Passwordless Authentication prevents unauthorized entry by hacking passwords, while allowing authorized users to set up SSH key connection
-- COMMAND to modify SSH configuration file: sudo vim /etc/ssh/sshd_config
+   - Using Passwordless Authentication prevents unauthorized entry by hacking passwords, while allowing authorized users to set up SSH key connection
+   - COMMAND to modify SSH configuration file: sudo vim /etc/ssh/sshd_config
 
 ### Hardening Against Password Attacks
 
@@ -62,11 +62,11 @@ TODO: insert img
 ### Hardening Against User Enumeration in WordPress
 
 1. Install Wordpress Plugin to stop user enumeration
-  - Toggle stop user enumeration in the security fixers tab
+   - Toggle stop user enumeration in the security fixers tab
 
 2. Fuzzing the parameter author in WordPress home URL
-  - User names are vulnerable when usernames are easily identifiable in WPScan
-  - Appending an integer onto author names will make names more difficult to identify
+   - User names are vulnerable when usernames are easily identifiable in WPScan
+   - Appending an integer onto author names will make names more difficult to identify
 
 ### Hardening Against Privilege Escalation with Python script
 
