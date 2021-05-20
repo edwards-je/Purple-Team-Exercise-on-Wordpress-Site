@@ -15,19 +15,18 @@ TODO: insert img
 
 ### Critical Vulnerabilities
 
-#### Open SSH 
-[https://attack.mitre.org/techniques/T1133/]
+#### Open SSH [https://attack.mitre.org/techniques/T1133/]
+
 -Open SSH is an exposed external remote service. Used to provide access to network resources from external locations.
 -Can be used by an attacker to gain entry to a system and for persistent access.
 
-#### Misconfigured IAM
-[https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication]
+#### Misconfigured IAM[https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication]
+
 -Confirming a user’s identity is critical to security operations. Broken Authentication is a widespread problem rooted in the design of Identity and Access Controls.
 -Weak passwords, no failed login attempt lockout, and failure to implement least-privilege provide vectors for an attacker. Here brute force, password guessing, and privilege escalation through sudo were all used.
 
-#### Sensitive Data Exposure
-[https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure]
-[https://attack.mitre.org/techniques/T1589/]
+#### Sensitive Data Exposure[https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure][https://attack.mitre.org/techniques/T1589/]
+
 -An attacker may search for insecure sensitive data. Insecure credentials can allow an attacker to more easily gain access.
 -Attackers are able to enumerate users through Wordpress. Additionally, the password for the MySQL database is store plaintext in wp-config.php. Failure can compromise all data on the system.
 
