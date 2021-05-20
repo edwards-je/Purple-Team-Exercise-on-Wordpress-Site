@@ -2,7 +2,7 @@
 
 ### Network Topology
 
- TODO: insert img
+ ![topology map](images/network.topology.png)
 
 ### Exposed Services
   Nmap scan results revealed services and OS details.
