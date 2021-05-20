@@ -48,16 +48,16 @@ TODO: insert img
 ### Hardening Against Password Attacks
 
 1.Secure Password Policy
-  -Protects from password guessing and crypto attacks on hashes
-  -enforcing password length and complexity policies
-  -checking for weak-passwords against password lists
-  -password expires after 60 days
-  -6 discrete passwords must be used before reuse
+   -Protects from password guessing and crypto attacks on hashes
+   -enforcing password length and complexity policies
+   -checking for weak-passwords against password lists
+   -password expires after 60 days
+   -6 discrete passwords must be used before reuse
 
 2.Account Lockout Threshold
-  -Prevents brute force attacks
-  -30-minute lockout after 3 failed attempts within 15-minutes
-  -alert on failed authentication
+   -Prevents brute force attacks
+   -30-minute lockout after 3 failed attempts within 15-minutes
+   -alert on failed authentication
 
 ### Hardening Against User Enumeration in WordPress
 
